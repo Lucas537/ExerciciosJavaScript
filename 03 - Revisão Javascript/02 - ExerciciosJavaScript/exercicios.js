@@ -125,14 +125,14 @@ manipularObjeto({ nome: "Carlos", idade: 28, cidade: "São Paulo" });
 
 // Exercicio 09
 
-function desestruturarObjeto(livro) {
-    // 1. Desestruturar o título e o autor do objeto
-    const { titulo, autor } = livro;
-    console.log("Título: " + titulo + ", Autor: " + autor);
-
-    // 2. Criar uma função que receba o objeto e retorne uma string com o título e o autor
-    function obterInformacoes(livro) {
-        return `O título do livro é "${livro.titulo}" e o autor é ${livro.autor}.`;
+    function desestruturarObjeto(livro) {
+        // 1. Desestruturar o título e o autor do objeto
+        const { titulo, autor } = livro;
+        console.log("titulo: " + titulo + ", Autor: " + autor);
+    
+        // 2. Criar uma função que receba o objeto e retorne uma string com o título e o autor
+        function obterInformacoes(livro) {
+        return 'O titulo do livro é "${livro.titulo}" e o autor é ${livro.autor}.';
     }
     console.log(obterInformacoes(livro));
 }
