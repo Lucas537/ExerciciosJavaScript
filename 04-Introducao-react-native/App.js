@@ -20,42 +20,44 @@ export default function App() {
   return (
 
     <ScrollView>
+      <View>
+        <View>
+          <Text>TESTE</Text>
+        </View>
+      </View>
+
+      <View style={styles.container}>
+        <StatusBar style="auto" />
+
+        {/* Comentário centro  */}
+        {/* Código Javascript */}
+        <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
+        <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
+        <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
+        <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
+        <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
+        <Text>{2 + 2}</Text>
+        <Text>{nome}</Text>
+
+        <Button title='Alterar' onPress={alerta}></Button>
+
+        <Image
+          source={{ uri: 'https://media.tenor.com/76hC1837BhEAAAAM/monkey-capucin.gif' }}
+          style={{
+            height: 300,
+            width: 300
+          }}
+        />
 
 
-
-  
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-
-      {/* Comentário centro  */}
-      {/* Código Javascript */}
-      <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
-      <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
-      <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
-      <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
-      <Text style={styles.textoGrande}>Palmeiras roubou o São Paulo</Text>
-      <Text>{2 + 2}</Text>
-      <Text>{nome}</Text>
-
-      <Button title='Alterar' onPress={alerta}></Button>
-
-      <Image
-        source={{ uri: 'https://media.tenor.com/76hC1837BhEAAAAM/monkey-capucin.gif' }}
-        style={{
-          height: 300,
-          width: 300
-        }}
-      />
-
-
-      <Image
-        source={require('./Imagens/image.png')}
-        style={{
-          height: 300,
-          width: 300
-        }}
-      />
-    </View>
+        <Image
+          source={require('./Imagens/image.png')}
+          style={{
+            height: 300,
+            width: 300
+          }}
+        />
+      </View>
     </ScrollView>
   );
 }
