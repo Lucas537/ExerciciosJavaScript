@@ -2,8 +2,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function JavascriptComponente() {
-  const nome = "Gustavo"
-  const idade = 12
+  const nome = "Lucas"
+  const idade = 21
 
   function exibirNome() {
     return nome
