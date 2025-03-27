@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Button } from 'react-native'
 import React from 'react'
 
 export default function JavascriptComponente() {
@@ -17,7 +17,7 @@ function checarmaioridade (){
 }
 
 function alerta (){
-    console.log ("Clicou no Botão")
+    console.log ("Chamou a função checarIdade")
     alert("Clicou no Botão")
 }
 
@@ -27,9 +27,7 @@ function alerta (){
       <Text style={styles.texto}>Nome: {nome} </Text>
       <Text style={styles.texto}>Idade: {idade} </Text>
       <Text style={styles.texto}>Eu sou: {checarmaioridade()} </Text>
-
-    <button title= 'Enviar' enPress={alerta} />
-
+      <Button title='Clicar' onPress={alerta} />
 
 
     </View>
