@@ -1,10 +1,10 @@
+
+
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Button } from 'react-native-paper'
 
-export default function Posts({navigation, route}) {
-
-    console.log ('navigation =>' , navigation)
+export default function Posts({ navigation, route}) {
   return (
     <View>
       <Text>Posts</Text>
@@ -15,20 +15,13 @@ export default function Posts({navigation, route}) {
       <Text>Posts</Text>
       <Text>Posts</Text>
 
-
-      <Button 
-      node='contained'
-      onPress={() => navigation.navigate('Feed')}>
-
-    Ir para Feed
-    
-      </Button>
-
       <Button
-      node='contained'
-      onPress={() => navigation.goBack('')}>
-
+        mode='contained'
+        onPress={() => navigation.goBack()}
+      >
+        Voltar
       </Button>
+
     </View>
   )
 }
